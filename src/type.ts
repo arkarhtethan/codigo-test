@@ -1,0 +1,1 @@
+export type Element = JSX.IntrinsicElements[keyof JSX.IntrinsicElements];
