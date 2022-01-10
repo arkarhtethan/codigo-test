@@ -1,4 +1,5 @@
 import works from "../data/works.json";
+import ProjectsSection from "./ProjectsSection";
 
 interface IWorkItemProps {
     name: string;
@@ -30,32 +31,35 @@ const Work = () => {
     );
 
     return (
-        <div className="w-4/5 mx-auto mt-40">
-            <div className="text-6xl font-extrabold space-y-4">
-                <p className="tracking-wider">Here's 5% of</p>
-                <p className="tracking-wider">our published work.</p>
-                <p className="tracking-wide primary-color">See 100% of our power.</p>
-            </div>
-            <div className="flex mt-24 w-full items-end">
-                <div className="grid grid-rows-4 grid-cols-3 gap-y-8 w-full">
-                    {works.map((work) => (
-                        <WorkItem name={work} isActive={work === "All"} />
-                    ))}
+        <div className="">
+            <div className="lg:w-4/5 mx-4 lg:mx-auto mt-40 mb-12">
+                <div className="text-6xl font-extrabold lg:space-y-4">
+                    <p className="tracking-wider">Here's 5% of</p>
+                    <p className="tracking-wider">our published work.</p>
+                    <p className="tracking-wide primary-color">See 100% of our power.</p>
                 </div>
-                <div className="w-1/4">
-                    <p className=" text-xs font-bold mb-6">LEGEND</p>
-                    <div className="flex flex-col space-y-4 border-l-2 border-black px-4">
-                        <div className="flex justify-between">
-                            <LegendItem image={"/ico-app.svg"} name="App" />
-                            <LegendItem image={"/ico-web.svg"} name="Web" />
-                        </div>
-                        <div className="flex justify-between">
-                            <LegendItem image={"/ico-cms.svg"} name="CMS" />
-                            <LegendItem image={"/ico-uiux.svg"} name="UI/UX" />
+                <div className="lg:flex mt-24 w-full items-end hidden">
+                    <div className="grid grid-rows-4 grid-cols-3 gap-y-8 w-full">
+                        {works.map((work) => (
+                            <WorkItem name={work} isActive={work === "All"} />
+                        ))}
+                    </div>
+                    <div className="w-1/4">
+                        <p className=" text-xs font-bold mb-6">LEGEND</p>
+                        <div className="flex flex-col space-y-4 border-l-2 border-black px-4">
+                            <div className="flex justify-between">
+                                <LegendItem image={"/ico-app.svg"} name="App" />
+                                <LegendItem image={"/ico-web.svg"} name="Web" />
+                            </div>
+                            <div className="flex justify-between">
+                                <LegendItem image={"/ico-cms.svg"} name="CMS" />
+                                <LegendItem image={"/ico-uiux.svg"} name="UI/UX" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <ProjectsSection />
         </div>
     );
 };
