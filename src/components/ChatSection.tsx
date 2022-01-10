@@ -24,7 +24,7 @@ const ChatSection = () => {
 
     return (
         <div className="my-16">
-            <h1 className="primary-color font-bold text-4xl text-center mb-12">Let's have a chat</h1>
+            <h1 className="primary-color font-bold text-4xl text-center mb-28">Let's have a chat</h1>
             <div className="flex space-x-12">
                 <ChatItem title="Build" description="Help you build something" />
                 <VerticalSeparator />
