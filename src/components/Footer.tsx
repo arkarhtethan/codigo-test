@@ -5,7 +5,7 @@ import ChatSection from './ChatSection'
 
 const Footer = () => {
     return (
-        <div className="bg-white w-full flex flex-col items-center space-y-5">
+        <div className="bg-white w-full flex flex-col items-center space-y-5 mb-16">
             <ChatSection />
             {/* icon */}
             <div className="flex text-lg space-x-8">
