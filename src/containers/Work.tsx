@@ -32,7 +32,7 @@ const Work = () => {
 
     return (
         <div className="">
-            <div className="lg:w-4/5 mx-4 lg:mx-auto mt-40 mb-12">
+            <div className="lg:w-4/5 mx-4 lg:mx-auto lg:mt-40 mt-32 mb-12">
                 <div className="text-6xl font-extrabold lg:space-y-4">
                     <p className="tracking-wider">Here's 5% of</p>
                     <p className="tracking-wider">our published work.</p>
