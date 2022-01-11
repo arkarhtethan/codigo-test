@@ -37,13 +37,13 @@ const ProjectItem = ({ category, cols, image, name, platform }: IProjectItemProp
     }
 
     return (
-        <Link to="/details" className={`${cols}`}>
-            <div
-                className={`bg-cover text-white h-96`}
-                style={{
-                    backgroundImage: `url(${image})`,
-                }}
-            >
+        <div
+            className={`bg-cover text-white h-96`}
+            style={{
+                backgroundImage: `url(${image})`,
+            }}
+        >
+            <Link to="/details">
                 <div className="flex flex-col justify-between py-4 pl-12 h-full">
                     <div className="flex flex-col space-y-2">
                         <p className="text-sm">{category}</p>
@@ -53,8 +53,8 @@ const ProjectItem = ({ category, cols, image, name, platform }: IProjectItemProp
                         <PlatFormItems />
                     </div>
                 </div>
-            </div>
-        </Link>
+            </Link>
+        </div>
     );
 };
 
