@@ -8,7 +8,7 @@ interface IChatItemProps {
 const ChatSection = () => {
     const ChatItem = ({ description, title }: IChatItemProps) => {
         return <div className="cursor-pointer px-12">
-            <div className="flex space-x-4 justify-between items-center">
+            <div className="flex space-x-1 justify-between items-center">
                 <p className="font-bold text-2xl mb-2">
                     {title}
                 </p>
@@ -25,7 +25,7 @@ const ChatSection = () => {
     return (
         <div className="lg:my-16 mb-12 w-full">
             <h1 className="primary-color font-bold text-4xl text-center lg:mb-28 lg:my-0 my-12">Let's have a chat</h1>
-            <div className="flex lg:flex-row flex-col lg:space-x-12 space-x-0 space-y-4 lg:space-y-0">
+            <div className="flex lg:flex-row flex-col lg:space-x-4 space-x-0 space-y-4 lg:space-y-0 mx-auto">
                 <ChatItem title="Build" description="Help you build something" />
                 <Separator />
                 <ChatItem title="Co-incubate" description="Co-incubate an idea together" />
