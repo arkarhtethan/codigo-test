@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
@@ -7,7 +6,7 @@ import Work from './containers/Work';
 
 function App () {
   return (
-    <div className="App">
+    <div>
       <NavBar />
       <Routes>
         <Route path="/" element={<Work />} />
