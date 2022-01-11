@@ -11,7 +11,6 @@ Simple landing page created with reactjs.
 ## Technologies
 - ReactJs
 - Tailwind
-- Firebase
 
 ## Setup
 
