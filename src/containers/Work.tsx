@@ -1,5 +1,5 @@
 import works from "../data/works.json";
-import ProjectsSection from "./ProjectsSection";
+import ProjectsSection from "../components/ProjectsSection";
 
 interface IWorkItemProps {
     name: string;
