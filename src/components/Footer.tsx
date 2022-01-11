@@ -1,6 +1,5 @@
 import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
 import ChatSection from './ChatSection'
 
 const Footer = () => {
@@ -22,7 +21,7 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
             </div>
-            <div className="flex flex-col items-center text-sm space-y-3">
+            <div className="flex flex-col items-center text-sm space-y-3 text-center">
                 <p>Copyright © Codigo - Mobile App Developer Singapore</p>
                 <p>+65 6455 9790 • 24 Sin Ming Lane, Midview City #04-91 Singapore 573970</p>
             </div>
