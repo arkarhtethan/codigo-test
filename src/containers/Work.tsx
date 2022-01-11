@@ -38,20 +38,20 @@ const Work = () => {
                     <p className="tracking-wider">our published work.</p>
                     <p className="tracking-wide primary-color">See 100% of our power.</p>
                 </div>
-                <div className="lg:flex mt-24 w-full items-end hidden">
-                    <div className="grid grid-rows-4 grid-cols-3 gap-y-8 w-full">
-                        {works.map((work) => (
-                            <WorkItem name={work} isActive={work === "All"} />
+                <div className="lg:flex md:flex lg:flex-row md:flex-col mt-24 lg:w-full items-end hidden md:w-5/6 md:mx-auto">
+                    <div className="grid grid-rows-4 grid-cols-3 lg:gap-y-8 md:gap-y-4 w-full">
+                        {works.map((work, index) => (
+                            <WorkItem key={index} name={work} isActive={work === "All"} />
                         ))}
                     </div>
-                    <div className="w-1/4">
+                    <div className="lg:w-1/4 w-full md:mt-16">
                         <p className=" text-xs font-bold mb-6">LEGEND</p>
                         <div className="flex flex-col space-y-4 border-l-2 border-black px-4">
-                            <div className="flex justify-between">
+                            <div className="flex space-x-5 lg:justify-between">
                                 <LegendItem image={"/ico-app.svg"} name="App" />
                                 <LegendItem image={"/ico-web.svg"} name="Web" />
                             </div>
-                            <div className="flex justify-between">
+                            <div className="flex space-x-5 lg:justify-between">
                                 <LegendItem image={"/ico-cms.svg"} name="CMS" />
                                 <LegendItem image={"/ico-uiux.svg"} name="UI/UX" />
                             </div>
